@@ -1,0 +1,31 @@
+[project]
+name = "calendar-assistant"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Mário Costa",email = "mariokozta@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi (>=0.143.0,<0.144.0)",
+    "uvicorn (>=0.54.0,<0.55.0)",
+    "google-api-python-client (>=2.201.0,<3.0.0)",
+    "google-auth (>=2.61.0,<3.0.0)",
+    "google-auth-oauthlib (>=1.5.0,<2.0.0)",
+    "google-auth-httplib2 (>=0.4.4,<0.5.0)",
+    "python-dotenv (>=1.2.4,<2.0.0)",
+    "openai (>=3.28.0,<4.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "pytest (>=9.1.1,<10.0.0)",
+    "pytest-asyncio (>=1.4.0,<2.0.0)",
+    "httpx (>=0.28.1,<0.29.0)"
+]
